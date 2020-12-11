@@ -3,6 +3,12 @@
   :url "https://github.com/IGJoshua/discljord"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :repositories [["private" {:url "s3p://maven.helpshift.com/releases/"
+                             ;; assumes LEIN_USERNAME and LEIN_PASSPHRASE
+                             ;; environment variables
+                             :username :env
+                             :passphrase :env}]]
+  :plugins [[s3-wagon-private "1.1.2"]]
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/core.async "1.2.603"]
                  [org.clojure/data.json "1.0.0"]
