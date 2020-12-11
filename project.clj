@@ -17,7 +17,7 @@
                  [stylefruits/gniazdo "1.1.4"]]
   :target-path "target/%s"
   :jar-name "discljord-%s.jar"
-  :deploy-branches ["master" "release" "hotfix"]
+  :deploy-branches ["master" "release" "hotfix" "feature/resume-session-between--process"]
   :profiles {:dev {:dependencies [[http-kit.fake "0.2.2"]
                                   [ch.qos.logback/logback-classic "1.2.3"]]
                    :plugins [[lein-codox "0.10.7"]]
