@@ -10,7 +10,7 @@
    [discljord.connections.specs :as cs]
    [discljord.http :refer [gateway-url]]
    [discljord.specs :as ds]
-   [discljord.util :refer [bot-token]]
+   [discljord.util :refer [bot-token derefable-promise-chan]]
    [clojure.tools.logging :as log]))
 
 (def gateway-intents #{:guilds :guild-members :guild-bans :guild-emojis
